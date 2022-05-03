@@ -34,7 +34,7 @@ overflow-x: scroll;
 const SliderItem = styled.div`
   display: inline-block;
   width: 150px;
-  height: auto;
+  height: 150px;
   background: white;
   border:  black;
   border-radius: 20px;
