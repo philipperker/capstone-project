@@ -1,11 +1,11 @@
 import CardSlide from "../components/CardSlide/CardSlide";
 import styled from "styled-components";
-// import { useState } from "react";
+
 
 export default function NFTview(){
 
     
-     // test NFT-Metadata
+     // first test with fake NFT-Metadata
      const exampleCollection = [
         
         { image: "https://ipfs.io/ipfs/QmR9uR6ufPnTrz2eFVrhgESEaU47Y7F4UE5pYorHNYR9XF", name: "hans", collection: "super" },
@@ -20,13 +20,12 @@ export default function NFTview(){
     return (
         
         <NFTviewMain>
-        <p>Collection: lorem....</p>
-        <CardSlide nft={exampleCollection}/>
-        <p>Collection: lorem....</p>
-        <CardSlide nft={exampleCollection}/>
-        <p>Collection: lorem....</p>
-        <CardSlide nft={exampleCollection}/>
-        
+           <CollectionName>NFT Collection: lorem....</CollectionName>
+           <CardSlide nft={exampleCollection}/>
+           <CollectionName>NFT Collection: lorem....</CollectionName>
+           <CardSlide nft={exampleCollection}/>
+           <CollectionName>NFT Collection: lorem....</CollectionName>
+           <CardSlide nft={exampleCollection}/>
         </NFTviewMain>
         
         
@@ -34,9 +33,17 @@ export default function NFTview(){
 }
 
 const NFTviewMain = styled.main`
-background-color: blue;
-
+display: grid;
+grid-template-columns:1fr auto 1fr;
+grid-template-rows:  auto;
 ;
+`
+const CollectionName = styled.p`
+margin-left: 1rem;
+color: white;
+grid-column-start: 2;
+grid-column-end: 3;
+justify-self: start;
 `
 
 

@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export default function CardSlide(props) {
+
+
      return (
         
         <ContainerCardSlide>
@@ -14,7 +16,9 @@ export default function CardSlide(props) {
 }
 
 const ContainerCardSlide = styled.div`
-
+grid-column-start: 2;
+grid-column-end: 3;
+justify-self: center;
 margin-left: 0.2rem;
 margin-right: 0.2rem;
 width: 100%;
