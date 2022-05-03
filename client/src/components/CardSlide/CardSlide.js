@@ -1,23 +1,12 @@
 import styled from 'styled-components';
 
-export default function CardSlide() {
-
-    // Test images
-    const exampleCollection = [
-        { image: "https://ipfs.io/ipfs/QmR9uR6ufPnTrz2eFVrhgESEaU47Y7F4UE5pYorHNYR9XF", name: "hans" },
-        { image: "https://ipfs.io/ipfs/QmR9uR6ufPnTrz2eFVrhgESEaU47Y7F4UE5pYorHNYR9XF", name: "peter" },
-        { image: "https://ipfs.io/ipfs/QmR9uR6ufPnTrz2eFVrhgESEaU47Y7F4UE5pYorHNYR9XF", name: "Gunther" },
-        { image: "https://ipfs.io/ipfs/QmR9uR6ufPnTrz2eFVrhgESEaU47Y7F4UE5pYorHNYR9XF", name: "Dieter" },
-        { image: "https://ipfs.io/ipfs/QmR9uR6ufPnTrz2eFVrhgESEaU47Y7F4UE5pYorHNYR9XF", name: "Karl" },
-        { image: "https://ipfs.io/ipfs/QmR9uR6ufPnTrz2eFVrhgESEaU47Y7F4UE5pYorHNYR9XF", name: "Rolf" },
-      ];
-
-    return (
+export default function CardSlide(props) {
+     return (
         
         <ContainerCardSlide>
-        {exampleCollection.map((nftImage, index) => (
+        {props.nft.map((nftMetadata, index) => (
             <SliderItem key={index}>
-              <SliderImage src={nftImage.image}/>
+              <SliderImage src={nftMetadata.image} alt={nftMetadata.name}/>
             </SliderItem> 
         ))}
         </ContainerCardSlide>

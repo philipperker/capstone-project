@@ -1,24 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
-import CardSlide from './components/CardSlide/CardSlide';
+import NFTview from './pages/NFTview';
 
 function App() {
   return (
-    <div className="App">
+    <>
       <header>
         <h1>test</h1>
       </header>
-      <main>
-        <p>NTF collection lorem....</p>
-      <CardSlide/>
-      {/* <p>NTF collection lorem....</p>
-      <CardSlide/>
-      <p>NTF collection lorem....</p>
-      <CardSlide/> */}
-      </main>
-     
-      
-    </div>
+     <NFTview/> 
+     </>
   );
 }
 
