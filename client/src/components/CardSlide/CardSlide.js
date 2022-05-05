@@ -1,14 +1,40 @@
+import { useState, useEffect } from "react";
 import styled from 'styled-components';
 
-export default function CardSlide(props) {
+export default function CardSlide() {
 
+  const [data, setData] = useState([]);
+  const [error, setError] = useState(null);
 
+  useEffect(() => {
+
+// https://capstone-test-api.vercel.app/  
+//https://capstone-test-42gsjahq5-philipperker.vercel.app/
+    const getMetadata = async () => {
+      
+      try {
+        const response = await fetch(
+          `https://capstone-test-api.vercel.app/`   
+        );
+        let data = await response.json();
+        
+        setData(data);
+        setError(null);
+
+      } catch(err) {
+        setError(err.message);
+        setData(null);
+      } 
+    }
+    getMetadata() 
+  },[])
+   
      return (
         
         <ContainerCardSlide>
-        {props.nft.map((nftMetadata, index) => (
+        {data.slice(0,8).map((nftMetadata, index) => (
             <SliderItem key={index}>
-              <SliderImage src={nftMetadata.image} alt={nftMetadata.name}/>
+              <SliderImage src={nftMetadata.image} alt={nftMetadata.token_id}/>
             </SliderItem> 
         ))}
         </ContainerCardSlide>
@@ -44,6 +70,6 @@ const SliderItem = styled.div`
 
 const SliderImage = styled.img`
   width: 150px;
-  height: auto;
+  height: 150px;
   border-radius: 20px;
 `;
