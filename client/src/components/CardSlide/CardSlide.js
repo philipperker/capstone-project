@@ -31,7 +31,7 @@ export default function CardSlide() {
    
      return (
         
-        <ContainerCardSlide>
+        <ContainerCardSlide data-testid="collectionCardSlide_id_1">
         {data.slice(0,8).map((nftMetadata, index) => (
             <SliderItem key={index}>
               <SliderImage src={nftMetadata.image} alt={nftMetadata.token_id}/>
