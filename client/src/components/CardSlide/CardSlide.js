@@ -14,7 +14,7 @@ export default function CardSlide() {
       
       try {
         const response = await fetch(
-          `https://capstone-test-api.vercel.app/`   
+          `https://capstone-test-fft007am3-philipperker.vercel.app/`   
         );
         let data = await response.json();
         
