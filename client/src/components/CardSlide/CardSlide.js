@@ -36,7 +36,7 @@ export default function CardSlide() {
   );
 }
 
-const ContainerCardSlide = styled.div`
+const ContainerCardSlide = styled.ul`
   grid-column-start: 2;
   grid-column-end: 3;
   justify-self: center;
@@ -52,7 +52,7 @@ const ContainerCardSlide = styled.div`
   }
 `;
 
-const SliderItem = styled.div`
+const SliderItem = styled.li`
   display: inline-block;
   width: 150px;
   height: 150px;
