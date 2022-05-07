@@ -2,9 +2,7 @@ import './App.css';
 import NFTview from './pages/NFTview';
 
 function App() {
-  return (
-     <NFTview/>  
-  );
+  return <NFTview />;
 }
 
 export default App;
