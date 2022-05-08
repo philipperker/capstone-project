@@ -6,8 +6,6 @@ export default function CardSlide() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    // https://capstone-test-api.vercel.app/
-    //https://capstone-test-42gsjahq5-philipperker.vercel.app/
     const getMetadata = async () => {
       try {
         const response = await fetch(
@@ -48,7 +46,7 @@ const ContainerCardSlide = styled.ul`
   overflow-x: scroll;
 
   ::-webkit-scrollbar {
-    display: none; /* chrome ok / work not in Firefox and ios*/
+    display: none; 
   }
 `;
 
