@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import NFTview from './NFTview';
 
-describe('render NTFview and text content', () => {
+describe('NFTview', () => {
   it('render NTFview and text content', () => {
     render(<NFTview />);
     const collectionName1 = screen.getByTestId('collectionName_id_1');
