@@ -6,6 +6,7 @@ export default function Navigation() {
 }
 
 const Navbar = styled.div`
+  z-index: 1;
   display: flex;
   flex-direction: row;
   justify-content: center;
