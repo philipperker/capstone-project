@@ -6,6 +6,7 @@ export default function PopUpDetailsNFT({
   nftTokenId,
   nftImageUrl,
   nftSmartContact,
+  onClose,
 }) {
   console.log(nftTokenId);
   console.log(nftImageUrl);
@@ -13,11 +14,11 @@ export default function PopUpDetailsNFT({
   if (!open) return null;
 
   return (
-    <PopUp>
+    <PopUp onClick={onClose}>
       <Image src={nftImageUrl}></Image>
       <Content>Token-ID: {nftTokenId}</Content>
       <Content>Smart Contact: </Content>
-      <Content>{nftSmartContact}</Content>
+      {/* <Content>{nftSmartContact}</Content> */}
     </PopUp>
   );
 }
@@ -27,11 +28,11 @@ const PopUp = styled.div`
   flex-direction: column;
   min-width: 90vw;
   max-width: 90vw;
-  min-height: 70vh;
+  min-height: 95vh;
   z-index: 1000;
   position: fixed;
   top: 20px;
-  background: red;
+  background: #7728b5;
   border: black;
   border-radius: 30px;
 `;
