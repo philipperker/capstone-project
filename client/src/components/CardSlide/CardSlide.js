@@ -11,6 +11,7 @@ export default function CardSlide() {
   const [tokenId, setNFTtokenID] = useState({});
   const [imageURL, setImageURL] = useState({});
   const [smartContact, setSmartContact] = useState({});
+  const [createdBy, setCreatedBy] = useState({});
 
   useEffect(() => {
     const getMetadata = async () => {
@@ -41,7 +42,8 @@ export default function CardSlide() {
               setIsOpen(true),
               setNFTtokenID(nftMetadata.token_id),
               setImageURL(nftMetadata.image),
-              setSmartContact(nftMetadata.contract_id)
+              setSmartContact(nftMetadata.contract_id),
+              setCreatedBy(nftMetadata.created_by)
             )}
           />
         </SliderItem>
@@ -52,6 +54,7 @@ export default function CardSlide() {
         nftSmartContact={smartContact}
         open={isOPen}
         onClose={() => setIsOpen(false)}
+        createdBy={createdBy}
       ></PopUpDetailsNFT>
     </ContainerCardSlide>
   );
@@ -63,7 +66,7 @@ const ContainerCardSlide = styled.ul`
   justify-self: center;
   margin-left: 0.2rem;
   margin-right: 0.2rem;
-  width: 100%;
+  width: 90%;
   height: auto;
   white-space: nowrap;
   overflow-x: scroll;
