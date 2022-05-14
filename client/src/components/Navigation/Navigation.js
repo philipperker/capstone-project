@@ -1,27 +1,25 @@
 import React from 'react';
 import styled from 'styled-components';
+import Button from '../Button/Button';
 
 export default function Navigation() {
-  return <Navbar></Navbar>;
+  return (
+    <Navbar>
+      <Button children={'home'} />
+    </Navbar>
+  );
 }
 
 const Navbar = styled.div`
   z-index: 1;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
+  justify-content: space-between;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
   background-color: #31237b;
   width: 100vw;
-  height: 80px;
+  height: 75px;
   bottom: 0;
   position: fixed;
-`;
-
-const Button = styled.button`
-  border-radius: 50%;
-  margin: 0.5rem;
-  width: 80px;
-  height: 80px;
 `;
