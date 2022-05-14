@@ -13,10 +13,6 @@ export default function NFTview() {
         NFT Collection: lorem....
       </CollectionName>
       <CardSlide />
-      <CollectionName data-testid="collectionName_id_3">
-        NFT Collection: lorem....
-      </CollectionName>
-      <CardSlide />
 
       <Navigation />
     </NFTviewMain>
