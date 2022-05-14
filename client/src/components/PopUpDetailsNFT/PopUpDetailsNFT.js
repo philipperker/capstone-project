@@ -33,14 +33,14 @@ const PopUp = styled.div`
   min-height: 95vh;
   z-index: 1000;
   position: fixed;
-  top: 5%;
+  top: 4%;
   left: 5%;
   background: #7728b5;
   border: black;
   border-radius: 30px;
 `;
 
-const Content = styled.div`
+const Content = styled.p`
   color: white;
   margin-left: 3rem;
 `;

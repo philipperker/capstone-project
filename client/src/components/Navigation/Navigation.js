@@ -12,9 +12,9 @@ const Navbar = styled.div`
   justify-content: center;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  background-color: red;
+  background-color: #31237b;
   width: 100vw;
-  height: 100px;
+  height: 80px;
   bottom: 0;
   position: fixed;
 `;
