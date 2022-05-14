@@ -9,9 +9,6 @@ export default function PopUpDetailsNFT({
   onClose,
   createdBy,
 }) {
-  console.log(nftTokenId);
-  console.log(nftImageUrl);
-
   if (!open) return null;
 
   return (
@@ -26,8 +23,6 @@ export default function PopUpDetailsNFT({
 }
 
 const PopUp = styled.div`
-  /* display: flex;
-  flex-direction: column; */
   min-width: 90vw;
   max-width: 90vw;
   min-height: 95vh;

@@ -23,7 +23,7 @@ const NFTviewMain = styled.main`
   z-index: 2;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
-  grid-template-rows: auto; ;
+  grid-template-rows: auto;
 `;
 const CollectionName = styled.p`
   margin-left: 1rem;

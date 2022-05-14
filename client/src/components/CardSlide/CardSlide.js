@@ -6,7 +6,6 @@ export default function CardSlide() {
   const [data, setData] = useState([]);
   const [error, setError] = useState(null);
 
-  //--- Test PopUP Details NFT
   const [isOPen, setIsOpen] = useState(false);
   const [tokenId, setNFTtokenID] = useState({});
   const [imageURL, setImageURL] = useState({});
