@@ -6,12 +6,15 @@ export default function Navigation() {
   return (
     <Navbar>
       <Button buttonContents={'home'} />
+      <Button buttonContents={'add'} />
     </Navbar>
   );
 }
 
 const Navbar = styled.div`
   z-index: 1;
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   border-top-left-radius: 35px;
   border-top-right-radius: 35px;
