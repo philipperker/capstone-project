@@ -6,13 +6,13 @@ export default function NFTview() {
   return (
     <NFTviewMain>
       <CollectionName data-testid="collectionName_id_1">
-        NFT Collection: lorem....
+        My NFT Collection
       </CollectionName>
       <CardSlide />
-      <CollectionName data-testid="collectionName_id_2">
+      {/* <CollectionName data-testid="collectionName_id_2">
         NFT Collection: lorem....
       </CollectionName>
-      <CardSlide />
+      <CardSlide /> */}
 
       <Navigation />
     </NFTviewMain>
