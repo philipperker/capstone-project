@@ -15,25 +15,18 @@ const NftCard = ({
       <ImageCard>
         <Image key={id} src={image}></Image>
         <Content>
-          Name: <a href={external_url}>{title}</a>
+          Name: <Link href={external_url}>{title}</Link>
         </Content>
         <Content>
-          GitHub:<a href={external_url}>Link</a>
-        </Content>
-        <Content>
-          <a
+          Marketplace:
+          <Link
             href={`https://testnets.opensea.io/assets/rinkeby/${address}/${id.substr(
               -1
             )}`}
           >
-            test
-          </a>
+            Opensea
+          </Link>
         </Content>
-        {/* <Content>
-          <a href={`https://etherscan.io/token/${address}`}>test</a>{' '}
-        </Content>  */}
-        {/* <Content>{nftSmartContact.slice(0, 20) + '....'}</Content> */}
-        {/* <p>{description ? description.slice(0, 200) : ''}</p> */}
       </ImageCard>
     </>
   );
@@ -68,10 +61,11 @@ const Image = styled.img`
   border-radius: 20px;
 `;
 
-// const ContainerImg = styled.img`
-//   width: 150px;
-//   height: 150px;
-//   border-radius: 20px;
-// `;
+const Link = styled.a`
+  color: white;
+  font-size: 1.5rem;
+  margin-left: 2rem;
+  text-decoration: none;
+`;
 
 export default NftCard;

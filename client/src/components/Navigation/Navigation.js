@@ -6,10 +6,10 @@ export default function Navigation() {
   return (
     <Navbar>
       <NavLinkStyle to="/">
-        <Content>home</Content>
+        <Content>info</Content>
       </NavLinkStyle>
       <NavLinkStyle to="/add">
-        <Content>add</Content>
+        <Content>explorer</Content>
       </NavLinkStyle>
     </Navbar>
   );

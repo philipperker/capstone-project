@@ -15,7 +15,7 @@ const Explore = () => {
         <StyleInput
           value={owner}
           onChange={e => setOwner(e.target.value)}
-          placeholder="Insert your wallet address"
+          placeholder="Insert your wallet address (ethereum rinkeby)"
         ></StyleInput>
 
         <StyleButton
