@@ -8,7 +8,7 @@ const Explore = () => {
   const [owner, setOwner] = useState('');
   const [contractAddress, setContractAddress] = useState('');
   const [NFTs, setNFTs] = useState('');
-  console.log(NFTs);
+
   return (
     <>
       <ContainerFlex>
@@ -30,6 +30,7 @@ const Explore = () => {
         NFTs.map(NFT => {
           return (
             <NftCard
+              key={NFT.id.tokenId}
               image={NFT.media[0].gateway}
               id={NFT.id.tokenId}
               title={NFT.title}

@@ -1,19 +1,19 @@
 import styled from 'styled-components';
 
 const NftCard = ({ image, id, title, address, external_url }) => {
+  let token_id_str = parseInt(id).toString();
+
   return (
     <>
       <ImageCard>
-        <Image key={id} src={image}></Image>
+        <Image src={image}></Image>
         <Content>
           Name: <Link href={external_url}>{title}</Link>
         </Content>
         <Content>
           Marketplace:
           <Link
-            href={`https://testnets.opensea.io/assets/rinkeby/${address}/${id.substr(
-              -1
-            )}`}
+            href={`https://testnets.opensea.io/assets/rinkeby/${address}/${token_id_str}`}
           >
             Opensea
           </Link>
