@@ -10,10 +10,10 @@ export default function NFTview() {
       </CollectionNameh1>
       <CollectionName data-testid="collectionName_id_1">
         Smart Contracts Address:
-        <CollectionName2>
-          0x7C198C077e86d43863Ac5851D420526A702691Ad
-        </CollectionName2>
       </CollectionName>
+      <CollectionName2>
+        0x7C198C077e86d43863Ac5851D420526A702691Ad
+      </CollectionName2>
 
       <CardSlide />
       {/* <CollectionName data-testid="collectionName_id_2">
@@ -48,7 +48,7 @@ const CollectionNameh1 = styled.h1`
 `;
 
 const CollectionName2 = styled.p`
-  margin-left: 0.1rem;
+  margin-left: 1rem;
   color: white;
   font-size: 0.7rem;
   grid-column-start: 2;

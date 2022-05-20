@@ -5,7 +5,6 @@ export default function PopUpDetailsNFT({
   open,
   nftTokenId,
   nftImageUrl,
-  nftSmartContact,
   onClose,
   createdBy,
 }) {
@@ -17,9 +16,6 @@ export default function PopUpDetailsNFT({
       <Content>Created by: {createdBy}</Content>
       <Content>ID: {nftTokenId}</Content>
       <Content></Content>
-
-      {/* <Content>Smart Contact: </Content> */}
-      {/* <Content>{nftSmartContact.slice(0, 20) + '....'}</Content> */}
     </PopUp>
   );
 }

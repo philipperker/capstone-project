@@ -1,15 +1,6 @@
 import styled from 'styled-components';
 
-const NftCard = ({
-  image,
-  id,
-  title,
-  address,
-  description,
-  attributes,
-  external_url,
-  contractAddress,
-}) => {
+const NftCard = ({ image, id, title, address, external_url }) => {
   return (
     <>
       <ImageCard>
