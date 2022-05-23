@@ -77,8 +77,8 @@ const ContainerCardSlide = styled.ul`
 
 const SliderItem = styled.li`
   display: inline-block;
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
   background: white;
   border: black;
   border-radius: 20px;
@@ -87,7 +87,7 @@ const SliderItem = styled.li`
 `;
 
 const SliderImage = styled.img`
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
   border-radius: 20px;
 `;
